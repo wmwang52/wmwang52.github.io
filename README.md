@@ -1,2 +1,2 @@
-# wmwang52-github.io
+# wmwang52.github.io
 Personal Portfolio
