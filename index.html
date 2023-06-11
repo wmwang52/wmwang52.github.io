@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navigationBar">
+        <input type="checkbox" id="menuToggle" class="menuToggle" />
+        <label for="menuToggle" class="menuIcon">&#9776;</label>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="homeContent">
+        <h1>Hey, I'm William!</h1>
+        <h3 class="types">I'm a <span id="typedDetails"></span></h3>
+        <div class="homeContactButton">
+          <a href="#contact">Contact me!</a>
+        </div>
+      </div>
+      <div class="profileImage">
+        <img src="Images/WilliamEmoji2.png" alt="Photo of William" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div id="aboutPhoto">
+        <img src="Images/William2.png" alt="Photo of William" />
+      </div>
+
+      <div id="aboutContent">
+        <h1 id="AboutTitle">About me</h1>
+        <h5>
+          Hello! I'm William Wang, a sophomore at UNC Chapel Hill, pursuing
+          majors in Computer Science and Business Administration.
+          <br /><br />
+          With a passion for software development and business strategy, I'm
+          interested in exploring opportunities with companies that align
+          closely with my values and interests. My particular areas of expertise
+          lie in Mobile App Development, Full-Stack Software Development, and
+          Consulting. I love the satisfaction of solving complex problems,
+          optimizing solutions, and delivering practical products that bring
+          positive change. No matter where I end up, I want to make a meaningful
+          impact in my field and contribute to a cause I genuinely care about.
+          <br /><br />
+          Outside of the classroom, I'm an avid photographer! I love taking
+          photos to create memories, capture moments, and explore new and
+          different perspectives.
+        </h5>
+      </div>
+    </section>
+
+    <section class="skillsTransition"></section>
+
+    <section class="skills" id="skills">
+      <div id="skillsContent">
+        <h1 id="skillsName">Skills</h1>
+        <div id="toggleContainer">
+          <input type="checkbox" id="toggleSwitch" />
+          <label for="toggleSwitch">Toggle me to see more!</label>
+        </div>
+        <div id="skillsGrid">
+          <div class="skillsItem">
+            <img src="Images/Java.png" alt="Java" />
+            <p>Java</p>
+          </div>
+          <div class="skillsItem">
+            <img src="Images/Python.png" alt="Python" />
+            <p>Python</p>
+          </div>
+          <div class="skillsItem">
+            <img src="Images/Swift.png" alt="Swift" />
+            <p>Swift</p>
+          </div>
+          <div class="skillsItem">
+            <img src="Images/SwiftUI.png" alt="SwiftUI" />
+            <p>SwiftUI</p>
+          </div>
+          <div class="skillsItem">
+            <img src="Images/Git.png" alt="Git" />
+            <p>Git</p>
+          </div>
+          <div class="skillsItem">
+            <img src="Images/Github.png" alt="Github" />
+            <p>Github</p>
+          </div>
+        </div>
+        <div id="learning-skillsGrid">
+          <div class="skillsItem">
+            <img src="Images/Excel.png" alt="Excel" />
+            <p>Excel</p>
+          </div>
+          <div class="skillsItem">
+            <img src="Images/Powerpoint.png" alt="Powerpoint" />
+            <p>Powerpoint</p>
+          </div>
+          <div class="skillsItem">
+            <img src="Images/Tableau.webp" alt="Tableau" />
+            <p>Tableau</p>
+          </div>
+          <div class="skillsItem">
+            <img src="Images/Confluence.png" alt="Confluence" />
+            <p>Confluence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coursesTransition"></section>
+
+    <section class="courses" id="courses">
+      <div id="courseContent">
+        <h1 id="courseNames">Computer Science Courses</h1>
+        <div id="courseToggleContainer">
+          <input type="checkbox" id="courseToggleSwitch" />
+          <label for="courseToggleSwitch">Swap Courses!</label>
+        </div>
+        <div class="coursesGrids">
+          <div id="courseGrid">
+            <div class="courseItem">
+              <button
+                class="courseIcon"
+                id="Comp110"
+                data-description="Introduction to Programming  <br/> Summer 2022 <br/><br/>  I learned an introduction to programming and data science from a computational perspective. With an emphasis on modern applications in society, I gained experience with problem decomposition, basic algorithms , abstraction design, and ethics in computing."
+              >
+                <img src="Images/Comp110.png" alt="Comp 110" />
+              </button>
+              <p>Comp 110</p>
+            </div>
+            <div class="courseItem">
+              <button
+                class="courseIcon"
+                data-description="Introduction to Data structures <br/> Spring 2023 <br/><br/> 
+              In this course, I learned to effectively organize data in computer programs, enabling efficient manipulation of large problems and data instances. I gained a deeper understanding of data structure construction and the rationale behind their inclusion or exclusion in programming language libraries."
+              >
+                <img src="Images/Comp210.png" alt="Comp 210" />
+              </button>
+              <p>Comp 210</p>
+            </div>
+            <div class="courseItem">
+              <button
+                class="courseIcon"
+                data-description="Discrete Mathematics <br/> Fall 2022 <br/><br/> In this course, I learned about discrete structures, including sets, tuples, relations, functions, graphs, and trees. I also studied the formal mathematics, such as logic, proof, and induction, used to establish their properties and analyze algorithms that work with them. "
+              >
+                <img src="Images/Math381.png" alt="Math 381" />
+              </button>
+              <p>Math 381</p>
+            </div>
+            <div class="courseItem">
+              <button
+                class="courseIcon"
+                data-description="Systems Fundamentals  <br/> Spring 2023 <br/><br/> In this course, my main objective was to bridge the gap between my existing knowledge of a high-level programming language and the intricate workings of computer organization."
+              >
+                <img src="Images/Comp211.png" alt="Comp 211" />
+              </button>
+              <p>Comp 211</p>
+            </div>
+            <div class="courseItem">
+              <button
+                class="courseIcon"
+                data-description="Foundations of Programming <br/> Spring 2023 <br/><br/> In this course I'm learning how to effectively organize larger bodies of code.  Throughout the semester, I plan to learn and develop the ability to reason about the structure of my code, evaluate its effectiveness in specific contexts, and explore various strategies for organizing code units that contribute to the success of larger programs."
+              >
+                <img src="Images/Comp301.png" alt="Comp 301" />
+              </button>
+              <p>Comp 301</p>
+            </div>
+          </div>
+          <div id="businessGrid">
+            <div class="courseItem">
+              <button
+                class="courseIcon"
+                data-description="Introduction To Economics <br/> Spring 2023 <br/><br/> I learned about the introduction to fundamental issues in economics. This includes topics such as competition, scarcity, opportunity cost, resource allocation, unemployment, inflation, and the determination of prices."
+              >
+                <img src="Images/Econ101.png" alt="Econ 101" />
+              </button>
+              <p>Econ 101</p>
+            </div>
+            <div class="courseItem">
+              <button
+                class="courseIcon"
+                data-description="Introduction To Business <br/> Fall 2022 <br/><br/>Throughout this course, I have explored five significant themes: people, customers, firms, markets, and society. By delving into these areas, I have gained insights into the dynamic world of business, its interconnected disciplines, and the role they play in driving positive change within a rapidly evolving environment. "
+              >
+                <img src="Images/Busi100.png" alt="Busi 100" />
+              </button>
+              <p>Busi 100</p>
+            </div>
+            <div class="courseItem">
+              <button
+                class="courseIcon"
+                data-description="Entrepreneurship and Business Planning<br/> Fall 2023 <br/><br/> Throughout this course, I have acquired a comprehensive understanding of entrepreneurship, including the essential tools and skills required to conceive, plan, execute, and scale a successful new venture. Through experiential pedagogy, I have had the opportunity to collaborate with peers and develop business ventures in teams. "
+              >
+                <img src="Images/Busi500.png" alt="Busi 500" />
+              </button>
+              <p>Busi 500</p>
+            </div>
+          </div>
+
+          <div id="courseInformation">
+            <h2>
+              Introduction to Programming <br />
+              Summer 2022 <br /><br />
+              I learned an introduction to programming and data science from a
+              computational perspective. With an emphasis on modern applications
+              in society, I gained experience with problem decomposition, basic
+              algorithms , abstraction design, and ethics in computing.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolioTransition"></section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="projects" id="heelfuelProject">
+        <div class="projectContent">
+          <h1>Heelfuel</h1>
+          <p>
+            Heelfuel is a mobile application that allows students to seamlessly
+            monitor their calorie intake, effectively manage their dietary
+            preferences, and effortlessly navigate through food allergies when
+            eating at UNC's dining halls and on-campus meal options.
+          </p>
+          <a
+            href="https://github.com/wmwang52/HeelFuel"
+            target="_blank"
+            class="GithubButton"
+            >Explore on GitHub</a
+          >
+        </div>
+        <div class="projectImages">
+          <img
+            src="Images/Secondary Screen.png"
+            alt="HeelFuel Screen 2"
+            class="image"
+          />
+
+          <img src="Images/MainScreen.png" alt="HeelFuel App" class="image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footerTransition"></section>
+    <section class="contact" id="contact">
+      <div id="contentInformation">
+        <h1>Contact me!</h1>
+        <h2>
+          Feel free to email me at wmwang32@unc.edu, or click on the email
+          button below! You can also check out the other buttons too!
+        </h2>
+
+        <div class="ButtonContainer">
+          <a
+            href="https://github.com/wmwang52"
+            target="_blank"
+            class="contactButton"
+            >Github</a
+          >
+          <a
+            href="linkedin.com/in/wmwang52"
+            target="_blank"
+            class="contactButton"
+            >LinkedIn</a
+          >
+
+          <a
+            href="mailto:wmwang32@unc.edu"
+            target="_blank"
+            class="contactButton"
+            >Mail</a
+          >
+          <a
+            href="https://www.instagram.com/wills_fotografia/"
+            target="_blank"
+            class="contactButton"
+            >Instagram</a
+          >
+        </div>
+        <p>(c) William Wang 2023</p>
+      </div>
+    </section>
+  </body>
+</html>
